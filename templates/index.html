@@ -3,11 +3,43 @@
    <head>
       <script type = "text/javascript"
          src = "{{ url_for('static', filename = 'hello.js') }}" ></script>
+
    </head>
 
-   <body bgcolor="blue">
+   <body bgcolor="87cefa">
 
       <h1> Text to Image Generative Network</h1>
+      <br>
+
+       <form>
+      <fieldset>
+        <legend>Face Identification Application</legend>
+        <p>
+          <label>Enter Victim Name </label>
+          <input type = "text"
+                 id = "name"
+                 value = "text here" />
+        </p>
+        <p>
+          <label>Enter Crime </label><br>
+          <input type="radio" name="crime" value="theft" checked> Theft<br>
+           <input type="radio" name="crime" value="murder"> Murder<br>
+            <input type="radio" name="crime" value="assault"> Assault
+        </p>
+         <br>
+
+        <p>
+          <label>Facial Features of the Suspect</label>
+           <br>
+           <br>
+          <textarea id = "features"
+                  rows = "3"
+                  cols = "80">
+             Your text here</textarea>
+        </p>
+      </fieldset>
+    </form>
+
       <input type = "button" onclick = "sayHello()" value = "Say Hello" />
    </body>
 </html>
