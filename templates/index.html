@@ -3,7 +3,7 @@
    <head>
       <script type = "text/javascript"
          src = "{{ url_for('static', filename = 'hello.js') }}" ></script>
-
+     >
    </head>
 
    <body bgcolor="87cefa">
@@ -11,14 +11,14 @@
       <h1> Text to Image Generative Network</h1>
       <br>
 
-       <form>
+       <form id="myform">
       <fieldset>
         <legend>Face Identification Application</legend>
         <p>
           <label>Enter Victim Name </label>
           <input type = "text"
                  id = "name"
-                 value = "text here" />
+                 required data-value-missing=” This field is required !” />
         </p>
         <p>
           <label>Enter Crime </label><br>
@@ -40,6 +40,6 @@
       </fieldset>
     </form>
 
-      <input type = "button" onclick = "sayHello()" value = "Say Hello" />
+      <input type = "button" onclick = "sayHello()" value = "submit" />
    </body>
 </html>
