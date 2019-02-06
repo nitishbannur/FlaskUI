@@ -1,0 +1,2 @@
+This application was developed by the students of MIT College of Engineering, Pune, jointly with IBM India, under the guidance of Prof. Dr. Siddhivinayak Kulkarni (MITCOE) and Mr. Amol Dhondse (IBM India).
+The purpose of this application is to expedite the identification of suspects in police investigations without the need of a human sketch artist.
