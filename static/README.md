@@ -1,0 +1,1 @@
+All static files here
