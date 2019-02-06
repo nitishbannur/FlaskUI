@@ -1,0 +1,33 @@
+{% extends "layouts.html" %}
+{% block content %}
+	<h1> Welcome to Virtual Sketch Artist</h1>
+      <br>
+
+       <form id="myform">
+	      <fieldset>
+	        <legend> Virtual Sketch Artist Application </legend>
+	        <p>
+	          <label>Enter Victim Name </label>
+	          <input type = "text"
+	                 id = "name"
+	                 required data-value-missing=” This field is required !” />
+	         <br>
+	         <label>Select Crime </label>
+	         <select>
+				  <option value="theft">Theft</option>
+				  <option value="assault">Assault</option>
+				  <option value="battery">Battery</option>
+				  <option value="gta">Grand Theft Auto</option>
+			</select>
+	        </p>
+	        <p>
+	          <label>Please enter facial features of the suspect :</label>
+	           <br>
+	         <textarea id = "features" rows = "3" cols = "60">Your text here</textarea>
+	        </p>
+	      </fieldset>
+	    </form>
+	 <div class="btn btn-outline-info">
+     <input type = "button" onclick = "sayHello()" value = "Submit" />
+ 	 </div>
+{% endblock content %}

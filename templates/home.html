@@ -1,0 +1,63 @@
+{% extends "layouts.html" %}
+{% block content2 %}
+	<h1> Welcome to Virtual Sketch Artist</h1>
+	<div class="content-section">
+		<form method="POST" action="">
+			{{ form.hidden_tag() }}
+			<fieldset class="form-group">
+				<legend class="border-bottom mb-4">{{ legend }}</legend>
+				<div class="form-group">
+					{{ form.name.label(class="form-control-label") }}
+					{{ form.name(class="form-control form-control-lg") }}
+				</div>
+				<div class="form-group">
+					{{ form.crime_type.label(class="form-control-label") }}
+					{{ form.crime_type(class="form-control form-control-lg") }}
+				</div>
+				<div class="form-group">
+					{{ form.description.label(class="form-control-label") }}
+					{{ form.description(class="form-control", cols="60", rows="5") }}
+				</div>
+				<div class="form-group">
+					{{ form.generate_img(class="btn btn-outline-info") }}
+				</div>
+
+								<!-- 
+				Image Checkbox Bootstrap template for multiple image selection
+				https://www.prepbootstrap.com/bootstrap-template/image-checkbox
+				-->
+				<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+				<div class="row">
+					{% for i in range(0,4) %}
+				  <div class="col-md-3  text-center">
+				    <label class="image-checkbox border">
+				      <img class="img-responsive p-2" src="{{url_for('static', filename='person.png')}}" />
+				      {{form.select_img}}
+				    </label>
+				  </div>
+				  {% endfor %}
+				</div>
+
+				<div class="row">
+				  {% for i in range(0,4) %}
+				  <div class="col-md-3  text-center">
+				    <label class="image-checkbox border">
+				      <img class="img-responsive p-2" src="{{url_for('static', filename='person.png')}}" />
+				      {{form.select_img}}
+				    </label>
+				  </div>
+				  {% endfor %}
+
+				</div>
+
+				<div class="form-group">
+					{{ form.incident_report.label(class="form-control-label") }}
+					{{ form.incident_report(class="form-control", cols="60", rows="10") }}
+				</div>
+				<div class="form-group">
+					{{ form.submit_report(class="btn btn-outline-info") }}
+				</div>
+			</fieldset>
+		</form>	
+	</div>
+{% endblock content2 %}
