@@ -27,27 +27,58 @@
 				https://www.prepbootstrap.com/bootstrap-template/image-checkbox
 				-->
 				<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-				<div class="row">
-					{% for i in range(0,4) %}
-				  <div class="col-md-3  text-center">
-				    <label class="image-checkbox border">
-				      <img class="img-responsive p-2" src="{{url_for('static', filename='person.png')}}" />
-				      {{form.select_img}}
-				    </label>
-				  </div>
-				  {% endfor %}
+				<div class="row form-group">
+					  <div class="col-md-3  text-center">
+					    <label class="border">
+					      <img class="img-responsive p-2" src="{{ url_for('static', filename='person.png') }}" />
+					      {{ form.select_img1 }}
+					    </label>
+					  </div>
+					  <div class="col-md-3  text-center">
+					    <label class="border">
+					      <img class="img-responsive p-2" src="{{ url_for('static', filename='person.png') }}" />
+					      {{ form.select_img2 }}
+					    </label>
+					  </div>
+					  <div class="col-md-3  text-center">
+					    <label class="border">
+					      <img class="img-responsive p-2" src="{{ url_for('static', filename='person.png') }}" />
+					      {{ form.select_img3 }}
+					    </label>
+					  </div>
+					  <div class="col-md-3  text-center">
+					    <label class="border">
+					      <img class="img-responsive p-2" src="{{ url_for('static', filename='person.png') }}" />
+					      {{ form.select_img4 }}
+					    </label>
+					  </div>
 				</div>
 
-				<div class="row">
-				  {% for i in range(0,4) %}
-				  <div class="col-md-3  text-center">
-				    <label class="image-checkbox border">
-				      <img class="img-responsive p-2" src="{{url_for('static', filename='person.png')}}" />
-				      {{form.select_img}}
-				    </label>
-				  </div>
-				  {% endfor %}
-
+				<div class="row form-group">
+					  <div class="col-md-3  text-center">
+					    <label class="border">
+					      <img class="img-responsive p-2" src="{{ url_for('static', filename='person.png') }}" />
+					      {{ form.select_img5 }}
+					    </label>
+					  </div>
+					  <div class="col-md-3  text-center">
+					    <label class="border">
+					      <img class="img-responsive p-2" src="{{ url_for('static', filename='person.png') }}" />
+					      {{ form.select_img6 }}
+					    </label>
+					  </div>
+					  <div class="col-md-3  text-center">
+					    <label class="border">
+					      <img class="img-responsive p-2" src="{{ url_for('static', filename='person.png') }}" />
+					      {{ form.select_img7 }}
+					    </label>
+					  </div>
+					  <div class="col-md-3  text-center">
+					    <label class="border">
+					      <img class="img-responsive p-2" src="{{ url_for('static', filename='person.png') }}" />
+					      {{ form.select_img8 }}
+					    </label>
+					  </div>
 				</div>
 
 				<div class="form-group">
